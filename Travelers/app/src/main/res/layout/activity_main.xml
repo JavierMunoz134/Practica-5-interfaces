@@ -1,0 +1,41 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travels"
+        android:textSize="24sp"
+        android:gravity="left"
+        android:background="#008577"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="horizontal"
+        android:scrollbars="none"
+        android:layout_below="@+id/title"
+    android:layout_marginTop="8dp"/>
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recyclerView"
+        android:layout_marginTop="16dp"
+    android:layout_margin="16dp"
+    android:scaleType="fitCenter">
+</ImageSwitcher>
+
+    </RelativeLayout>

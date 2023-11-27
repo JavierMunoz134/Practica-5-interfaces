@@ -1,0 +1,14 @@
+<resources>
+    <!-- Margenes -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Altura y ancho de AutoCompleteTextView -->
+    <dimen name="auto_complete_text_view_height">wrap_content</dimen>
+
+    <!-- Altura de TableRow -->
+    <dimen name="table_row_height">wrap_content</dimen>
+
+    <!-- Margen y tamaño de las celdas en el TableLayout -->
+    <dimen name="table_cell_margin">8dp</dimen>
+</resources>

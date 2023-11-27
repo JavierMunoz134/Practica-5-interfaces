@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_complete_text_view_height"
+        android:layout_marginBottom="@dimen/table_cell_margin"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/auto_complete_text_view_height"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginBottom="@dimen/table_cell_margin"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView2"
+        android:layout_marginTop="@dimen/table_cell_margin">
+
+        <!-- TableRow 1 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_row_height">
+
+            <TextView
+                android:text="Planeta"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Diametro"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Distancia al Sol"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:text="Densidad"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!-- TableRow 2 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_row_height">
+
+            <TextView
+                android:id="@+id/planeta1"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/diametro1"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/distancia1"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/densidad1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+
+        <!-- TableRow 3 -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/table_row_height">
+
+            <TextView
+                android:id="@+id/planeta2"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/diametro2"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/distancia2"
+                android:layout_marginRight="@dimen/table_cell_margin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/densidad2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
